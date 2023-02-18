@@ -12,8 +12,14 @@ const useApi = () => {
     const robotsArray = (await response.json()) as RobotsStructure;
     dispatch(loadRobotsActionCreator(robotsArray));
   }, [apiUrl, dispatch]);
+  const deleteRobot = useCallback(
+    async (id: number) => {
+      await fetch(`${apiUrl}/${id}`, { method: "DELETE" });
+    },
+    [apiUrl]
+  );
 
-  return { loadRobots };
+  return { loadRobots, deleteRobot };
 };
 
 export default useApi;
