@@ -1,7 +1,7 @@
-import React from "react";
+import Layout from "./Layout/Layout";
 
 function App() {
-  return <h1>Canviar</h1>;
+  return <Layout />;
 }
 
 export default App;
