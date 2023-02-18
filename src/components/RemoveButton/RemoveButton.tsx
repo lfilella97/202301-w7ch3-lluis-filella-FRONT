@@ -10,16 +10,16 @@ const RemoveButton = ({ id }: RemoveButtonProps): JSX.Element => {
   const dispatch = useAppDispatch();
   const { deleteRobot } = useApi();
 
-  const removeTodo = async () => {
+  const removeRobot = async () => {
     dispatch(removeRobotActionCreator(id));
     await deleteRobot(id);
   };
 
   return (
     <Button
-      className="remove__todo button"
+      className="remove__robot button"
       text={"🗑️"}
-      action={removeTodo}
+      action={removeRobot}
       disabled={false}
     />
   );
