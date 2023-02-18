@@ -15,4 +15,4 @@ const robotsSlice = createSlice({
 
 export const robotsReducer = robotsSlice.reducer;
 
-export const { loadRobots } = robotsSlice.actions;
+export const { loadRobots: loadRobotsActionCreator } = robotsSlice.actions;
