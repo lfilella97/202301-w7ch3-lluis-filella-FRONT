@@ -9,16 +9,20 @@ const RobotList = (): JSX.Element => {
   useEffect(() => {
     loadRobots();
   }, [loadRobots]);
+
   const robots = useAppSelector((state) => state.robots);
 
   return (
-    <ul className="robots-list">
-      {robots.map((robot) => (
-        <li key={robot._id}>
-          <RobotCard robot={robot} />
-        </li>
-      ))}
-    </ul>
+    <>
+      <h2 className="robots-list__title">ROBOTS LIST</h2>
+      <ul className="robots-list">
+        {robots.map((robot) => (
+          <li key={robot._id}>
+            <RobotCard robot={robot} />
+          </li>
+        ))}
+      </ul>
+    </>
   );
 };
 

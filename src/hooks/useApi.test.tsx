@@ -24,6 +24,7 @@ describe("Given a useApi function", () => {
       });
 
       await act(async () => loadRobots());
+
       expect(mockDispatcher).toHaveBeenCalled();
     });
   });

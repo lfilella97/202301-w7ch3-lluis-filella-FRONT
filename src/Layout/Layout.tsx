@@ -2,11 +2,9 @@ import RobotList from "../components/robotList/robotList";
 
 const Layout = (): JSX.Element => {
   return (
-    <>
-      <div>
-        <RobotList />
-      </div>
-    </>
+    <div>
+      <RobotList />
+    </div>
   );
 };
 

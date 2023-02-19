@@ -11,7 +11,9 @@ describe("Given a robotList component", () => {
           <RobotList />
         </Wrapper>
       );
+
       const RobotCards = screen.getAllByRole("listitem");
+
       for (const RobotCard of RobotCards) {
         expect(RobotCard).toBeInTheDocument();
       }
