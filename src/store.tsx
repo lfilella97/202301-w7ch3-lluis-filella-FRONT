@@ -10,30 +10,30 @@ import { RobotsStructure } from "./types";
 export const robots: RobotsStructure = [
   {
     id: 1,
-    name: "patato",
+    name: "The Enforecer",
     imageUrl:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngitem.com%2Fmiddle%2FmmiJb_robot-warm-up-android-humanoid-robot-hd-png%2F&psig=AOvVaw3mbXBjpe1I1WZlgDWCAXq6&ust=1676896991056000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLCApZ3Oof0CFQAAAAAdAAAAABAE",
+      "https://th.bing.com/th/id/R.c80c2c84b81e6d7dab399091c4a31305?rik=1Bj%2fnd%2fKZ34fdw&riu=http%3a%2f%2fwww.igorstshirts.com%2fblog%2fconceptrobots%2f2011%2fflyingdebris%2fflyingdebris_09.jpg&ehk=Z%2f%2f8TdvKODoBdQ%2bM96GznGYHNNl8vtXq0CwlkQSLBsE%3d&risl=&pid=ImgRaw&r=0",
     speed: 9,
     endurance: 1,
-    creationDate: "dad",
+    creationDate: "4/3/2020",
   },
   {
     id: 2,
-    name: "patato",
+    name: "Medic",
     imageUrl:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngitem.com%2Fmiddle%2FmmiJb_robot-warm-up-android-humanoid-robot-hd-png%2F&psig=AOvVaw3mbXBjpe1I1WZlgDWCAXq6&ust=1676896991056000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLCApZ3Oof0CFQAAAAAdAAAAABAE",
+      "https://th.bing.com/th/id/R.c80c2c84b81e6d7dab399091c4a31305?rik=1Bj%2fnd%2fKZ34fdw&riu=http%3a%2f%2fwww.igorstshirts.com%2fblog%2fconceptrobots%2f2011%2fflyingdebris%2fflyingdebris_09.jpg&ehk=Z%2f%2f8TdvKODoBdQ%2bM96GznGYHNNl8vtXq0CwlkQSLBsE%3d&risl=&pid=ImgRaw&r=0",
     speed: 1,
     endurance: 1,
-    creationDate: "dad",
+    creationDate: "12/4/2023",
   },
   {
     id: 3,
     name: "patato",
     imageUrl:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngitem.com%2Fmiddle%2FmmiJb_robot-warm-up-android-humanoid-robot-hd-png%2F&psig=AOvVaw3mbXBjpe1I1WZlgDWCAXq6&ust=1676896991056000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLCApZ3Oof0CFQAAAAAdAAAAABAE",
+      "https://th.bing.com/th/id/R.8fbac70c8e0e95d27491d09b01b06cba?rik=AZ0uV%2bHfwNMjBw&riu=http%3a%2f%2fconceptartworld.com%2fwp-content%2fuploads%2f2013%2f02%2fRobot_Concept_Art_by_Galan_Pang_01a.jpg&ehk=2zucqCtS5aKxNy%2f1Q0dwWphAEAPSuKv8fbB6F4ZLbZg%3d&risl=&pid=ImgRaw&r=0",
     speed: 1,
     endurance: 1,
-    creationDate: "dad",
+    creationDate: "30/3/2021",
   },
 ];
 

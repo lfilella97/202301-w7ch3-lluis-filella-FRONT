@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Phudu:wght@500&display=swap");
 **,
 *::before,
 *::after {
@@ -15,4 +14,5 @@ li {
 
 body {
   font-family: "Lato", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(124, 121, 121);
 }

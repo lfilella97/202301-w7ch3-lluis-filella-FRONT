@@ -1,0 +1,8 @@
+.robots-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 21px;
+  margin-top: 41px;
+}
