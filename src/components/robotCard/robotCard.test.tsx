@@ -8,9 +8,9 @@ describe("Given a robotCard component", () => {
     test("It should render four spans and one image", () => {
       const robot: RobotCardProps = {
         robot: {
-          id: 1,
+          _id: 1,
           name: "patato",
-          imageUrl: "string;",
+          image: "string;",
           speed: 9,
           endurance: 1,
           creationDate: "dad",

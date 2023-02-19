@@ -7,7 +7,7 @@ export interface RobotCardProps {
 }
 
 export const RobotCard = ({
-  robot: { id, name, imageUrl, speed, endurance, creationDate },
+  robot: { _id, name, image, speed, endurance, creationDate },
 }: RobotCardProps): JSX.Element => {
   return (
     <div className="robot-card">
@@ -15,7 +15,7 @@ export const RobotCard = ({
         className="robot-card__image"
         width="327"
         height="222"
-        src={imageUrl}
+        src={image}
         alt={name}
       />
       <h2 className="robot-card__title">{name}</h2>
@@ -23,10 +23,10 @@ export const RobotCard = ({
         <span className="robot-card__speed">Speed: {speed}</span>
         <span className="robot-card__endurance">Endurance: {endurance}</span>
         <span className="robot-card__creationDate">
-          Creation Date: {creationDate}
+          Creation Date: {creationDate.split("T", 1)}
         </span>
       </div>
-      <RemoveButton id={id} />
+      <RemoveButton id={_id} />
     </div>
   );
 };
