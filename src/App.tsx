@@ -1,7 +1,7 @@
 import Layout from "./Layout/Layout";
 
-function App() {
+const App = () => {
   return <Layout />;
-}
+};
 
 export default App;

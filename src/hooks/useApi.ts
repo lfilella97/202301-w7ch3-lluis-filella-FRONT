@@ -14,6 +14,7 @@ const useApi = () => {
       if (!response.ok) {
         return;
       }
+
       dispatch(loadRobotsActionCreator(robotsArray.Robots));
     } catch (error) {
       return (error as Error).message;

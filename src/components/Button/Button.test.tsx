@@ -22,6 +22,7 @@ describe("Given a Button component", () => {
       });
 
       expect(genericButton).toHaveClass("primary__button");
+
       expect(genericButton).toHaveTextContent("hello");
     });
   });
@@ -42,6 +43,7 @@ describe("Given a Button component", () => {
       const genericButton = screen.getByRole("button", {
         name: "Secondary",
       });
+
       userEvent.click(genericButton);
       expect(action).toHaveBeenCalled();
     });
