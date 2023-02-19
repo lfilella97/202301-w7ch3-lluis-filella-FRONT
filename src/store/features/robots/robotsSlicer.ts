@@ -1,7 +1,9 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { robots } from "../../../store";
+
 import { RobotsStructure } from "../../../types";
 
-const initialRobots: RobotsStructure = [];
+const initialRobots: RobotsStructure = robots;
 
 const robotsSlice = createSlice({
   name: "robots",
@@ -11,7 +13,7 @@ const robotsSlice = createSlice({
       ...action.payload,
     ],
     removeRobot: (currentRobots, action: PayloadAction<number>) =>
-      currentRobots.filter((robot) => robot.id !== action.payload),
+      currentRobots.filter((robot) => robot._id !== action.payload),
   },
 });
 

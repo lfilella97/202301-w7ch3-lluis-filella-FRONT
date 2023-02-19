@@ -14,7 +14,7 @@ const RobotList = (): JSX.Element => {
   return (
     <ul className="robots-list">
       {robots.map((robot) => (
-        <li key={robot.id}>
+        <li key={robot._id}>
           <RobotCard robot={robot} />
         </li>
       ))}
