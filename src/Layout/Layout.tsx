@@ -1,8 +1,10 @@
+import RobotList from "../components/robotList/robotList";
+
 const Layout = (): JSX.Element => {
   return (
     <>
       <div>
-        <h1>Tot be</h1>
+        <RobotList />
       </div>
     </>
   );

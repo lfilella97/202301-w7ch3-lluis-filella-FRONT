@@ -19,10 +19,10 @@ export const RobotCard = ({
         alt={name}
       />
       <div className="robot-card__properties">
-        <span className="robot-card__speed">`Speed:{speed}`</span>
-        <span className="robot-card__endurance">`Endurance:{endurance}`</span>
+        <span className="robot-card__speed">Speed:{speed}</span>
+        <span className="robot-card__endurance">Endurance:{endurance}</span>
         <span className="robot-card__creationDate">
-          `CreationDate:{creationDate}`
+          CreationDate:{creationDate}
         </span>
       </div>
       <RemoveButton id={id} />
