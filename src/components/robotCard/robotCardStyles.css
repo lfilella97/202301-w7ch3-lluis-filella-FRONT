@@ -2,10 +2,42 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  min-width: 327px;
   position: relative;
-  background: #545758;
+  background: #21718b;
   color: white;
   font-size: 20px;
   border-radius: 15px;
+}
+
+.robot-card__image {
+  min-width: 327px;
+  min-height: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.robot-card__properties {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.robot-card__title {
+  font-family: "phudu", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+}
+
+.remove__robot {
+  position: absolute;
+  color: #757575;
+  font-size: 58px;
+  left: 242px;
+  top: -5px;
+  background-color: #21718b;
+  transform: scale(0.5, 0.5);
+  border: none;
+  border-radius: 30%;
+  text-align: center;
 }

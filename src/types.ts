@@ -8,3 +8,6 @@ export interface RobotStructure {
 }
 
 export type RobotsStructure = RobotStructure[];
+export interface APIdata {
+  robots: RobotsStructure;
+}
