@@ -22,6 +22,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:dev": "react-scripts build -w",
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "test:coverage": "react-scripts test --coverage --watchAll=false",

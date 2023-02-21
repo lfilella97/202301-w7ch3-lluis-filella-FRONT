@@ -3,9 +3,9 @@ import App from "./App";
 import Wrapper from "./mocks/Wrapper";
 import "@testing-library/jest-dom/extend-expect";
 
-describe("Given a Button component", () => {
-  describe("When rendered with the class 'primary__button', with the text 'Primary' and with the action 'action'", () => {
-    test("It should render a button with the class 'primary__button', the text 'Primary', and the function 'action'", () => {
+describe("Given a App component", () => {
+  describe("When rendered", () => {
+    test("It should render the text `ROBOTS LITS`", () => {
       const title = "ROBOTS LIST";
 
       render(

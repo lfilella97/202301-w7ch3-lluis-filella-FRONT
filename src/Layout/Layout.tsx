@@ -1,4 +1,4 @@
-import RobotList from "../components/robotList/robotList";
+import RobotList from "../components/ListRobot/RobotList";
 
 const Layout = (): JSX.Element => {
   return (

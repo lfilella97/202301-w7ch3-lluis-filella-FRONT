@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import Wrapper from "../../mocks/Wrapper";
-import RobotList from "./robotList";
 import "@testing-library/jest-dom/extend-expect";
+import RobotList from "./RobotList";
 
 describe("Given a robotList component", () => {
   describe("When it is invoked and passed 3 robots", () => {
