@@ -5,7 +5,7 @@ import "@testing-library/jest-dom/extend-expect";
 
 describe("Given a App component", () => {
   describe("When rendered", () => {
-    test("It should render the text `ROBOTS LITS`", () => {
+    test("It should render the text `ROBOTS LIST`", () => {
       const title = "ROBOTS LIST";
 
       render(
