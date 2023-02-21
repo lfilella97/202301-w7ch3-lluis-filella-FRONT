@@ -1,6 +1,6 @@
 import { RobotStructure } from "../../types";
 import RemoveButton from "../RemoveButton/RemoveButton";
-import "./robotCardStyles.css";
+import "./RobotCardStyles.css";
 
 export interface RobotCardProps {
   robot: RobotStructure;

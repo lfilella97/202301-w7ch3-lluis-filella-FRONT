@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import Wrapper from "../../mocks/Wrapper";
-import { RobotCard, RobotCardProps } from "./robotCard";
+import { RobotCard, RobotCardProps } from "./RobotCard";
 import "@testing-library/jest-dom/extend-expect";
 
 describe("Given a robotCard component", () => {
