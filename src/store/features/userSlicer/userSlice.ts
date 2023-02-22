@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { UserState } from "./types";
+import { UserState } from "../../../types";
 
 const initialUserState: UserState = {
   isLogged: false,
@@ -11,7 +11,7 @@ const UserSlice = createSlice({
   name: "user",
   initialState: initialUserState,
   reducers: {
-    loadUser: (currentUserState, action: PayloadAction<UserState>) => ({
+    logInUser: (currentUserState, action: PayloadAction<UserState>) => ({
       ...action.payload,
     }),
   },
@@ -19,4 +19,4 @@ const UserSlice = createSlice({
 
 export const robotsReducer = UserSlice.reducer;
 
-export const { loadUser: loadUserActionCreator } = UserSlice.actions;
+export const { logInUser: loadUserActionCreator } = UserSlice.actions;
