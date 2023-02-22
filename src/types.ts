@@ -12,8 +12,11 @@ export interface APIdata {
   robots: RobotsStructure;
 }
 
-export interface UserState {
+export interface User {
   userName: string;
-  isLogged: boolean;
   token: string;
+}
+
+export interface UserState extends User {
+  isLogged: boolean;
 }

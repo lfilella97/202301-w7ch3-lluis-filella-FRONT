@@ -1,22 +1,29 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { UserState } from "../../../types";
+import { User, UserState } from "../../../types";
 
 const initialUserState: UserState = {
   isLogged: false,
   userName: "",
   token: "",
+  newThing: false,
 } as UserState;
 
 const UserSlice = createSlice({
   name: "user",
   initialState: initialUserState,
   reducers: {
-    logInUser: (currentUserState, action: PayloadAction<UserState>) => ({
-      ...action.payload,
+    logInUser: (
+      currentUserState: UserState,
+      action: PayloadAction<User>
+    ): UserState => ({
+      ...currentUserState,
+      token: action.payload.token,
+      userName: action.payload.userName,
+      isLogged: true,
     }),
   },
 });
 
-export const robotsReducer = UserSlice.reducer;
+export const userReducer = UserSlice.reducer;
 
 export const { logInUser: loadUserActionCreator } = UserSlice.actions;
