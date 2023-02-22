@@ -2,10 +2,12 @@ import Header from "../components/Header/Header";
 import RobotList from "../components/ListRobot/RobotList";
 
 const Layout = (): JSX.Element => {
+  const isLogged = false;
+
   return (
     <div>
       <Header />
-      <RobotList />
+      {isLogged ?? <RobotList />}
     </div>
   );
 };
