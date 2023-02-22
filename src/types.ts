@@ -13,7 +13,10 @@ export interface APIdata {
 }
 
 export interface UserState {
-  userName: string;
   isLogged: boolean;
+}
+
+export interface User extends UserState {
+  userName: string;
   token: string;
 }
