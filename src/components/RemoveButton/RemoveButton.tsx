@@ -1,4 +1,4 @@
-import { removeRobotActionCreator } from "../../store/features/robots/robotsSlicer";
+import { removeRobotActionCreator } from "../../store/features/robotsSlicer/robotsSlice";
 import { useAppDispatch } from "../../store/hooks";
 import Button from "../Button/Button";
 

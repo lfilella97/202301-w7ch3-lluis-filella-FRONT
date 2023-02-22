@@ -1,5 +1,5 @@
 import { useCallback } from "react";
-import { loadRobotsActionCreator } from "../store/features/robots/robotsSlicer";
+import { loadRobotsActionCreator } from "../store/features/robotsSlicer/robotsSlice";
 import { useAppDispatch } from "../store/hooks";
 
 const useApi = () => {

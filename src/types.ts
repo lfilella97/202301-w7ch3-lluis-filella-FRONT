@@ -11,3 +11,9 @@ export type RobotsStructure = RobotStructure[];
 export interface APIdata {
   robots: RobotsStructure;
 }
+
+export interface UserState {
+  userName: string;
+  isLogged: boolean;
+  token: string;
+}
