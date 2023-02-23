@@ -5,8 +5,7 @@ const initialUserState: UserState = {
   isLogged: false,
   userName: "",
   token: "",
-  newThing: false,
-} as UserState;
+};
 
 const UserSlice = createSlice({
   name: "user",
@@ -26,4 +25,4 @@ const UserSlice = createSlice({
 
 export const userReducer = UserSlice.reducer;
 
-export const { logInUser: loadUserActionCreator } = UserSlice.actions;
+export const { logInUser: logInUserActionCreator } = UserSlice.actions;

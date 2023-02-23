@@ -1,13 +1,6 @@
-import {
-  Action,
-  configureStore,
-  createSlice,
-  PayloadAction,
-  ThunkAction,
-} from "@reduxjs/toolkit";
-import { RobotsStructure } from "./types";
+import { RobotsStructure } from "../types";
 
-export const robots: RobotsStructure = [
+const robots: RobotsStructure = [
   {
     _id: 1,
     name: "The Enforecer",
@@ -37,38 +30,4 @@ export const robots: RobotsStructure = [
   },
 ];
 
-const mockInitialRobots: RobotsStructure = robots;
-
-const robotsSlice = createSlice({
-  name: "robots",
-  initialState: mockInitialRobots,
-  reducers: {
-    loadRobots: (currentRobots, action: PayloadAction<RobotsStructure>) => [
-      ...action.payload,
-    ],
-    removeRobot: (currentRobots, action: PayloadAction<number>) =>
-      currentRobots.filter((robot) => robot._id !== action.payload),
-  },
-});
-
-export const mockRobotsReducer = robotsSlice.reducer;
-
-export const {
-  loadRobots: mockLoadRobotsActionCreator,
-  removeRobot: mockRemoveRobotActionCreator,
-} = robotsSlice.actions;
-
-export const mockStore = configureStore({
-  reducer: {
-    robots: mockRobotsReducer,
-  },
-});
-
-export type AppDispatch = typeof mockStore.dispatch;
-export type RootState = ReturnType<typeof mockStore.getState>;
-export type AppThunk<ReturnType = void> = ThunkAction<
-  ReturnType,
-  RootState,
-  unknown,
-  Action<string>
->;
+export default robots;
