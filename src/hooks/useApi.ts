@@ -1,25 +1,25 @@
 import { useCallback } from "react";
+import { apiUrl } from "../envoirementVariables";
 import { loadRobotsActionCreator } from "../store/features/robotsSlicer/robotsSlice";
 import { useAppDispatch } from "../store/hooks";
 
 const useApi = () => {
   const dispatch = useAppDispatch();
-  const apiUrl = process.env.REACT_APP_URL_API!;
 
   const loadRobots = useCallback(async () => {
     try {
-      const response = await fetch(apiUrl);
+      const response: Response = await fetch(apiUrl);
       const robotsArray = await response.json();
 
       if (!response.ok) {
-        return;
+        throw new Error(response.statusText);
       }
 
-      dispatch(loadRobotsActionCreator(robotsArray.Robots));
+      dispatch(loadRobotsActionCreator(robotsArray.robots));
     } catch (error) {
       return (error as Error).message;
     }
-  }, [apiUrl, dispatch]);
+  }, [dispatch]);
 
   return { loadRobots };
 };

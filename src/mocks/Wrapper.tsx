@@ -1,12 +1,12 @@
 import { Provider } from "react-redux";
-import { mockStore } from "../store";
+import { store } from "../store";
 
 export interface WrapperProps {
   children: JSX.Element | JSX.Element[];
 }
 
 const Wrapper = ({ children }: WrapperProps): JSX.Element => (
-  <Provider store={mockStore}> {children}</Provider>
+  <Provider store={store}> {children}</Provider>
 );
 
 export default Wrapper;

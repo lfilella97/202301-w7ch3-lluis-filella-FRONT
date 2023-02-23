@@ -1,4 +1,4 @@
-import { loadUserActionCreator } from "./userSlice";
+import { logInUserActionCreator } from "./userSlice";
 import type { UserState } from "../../../types";
 
 describe("Given logInUserAction", () => {
@@ -10,7 +10,7 @@ describe("Given logInUserAction", () => {
         userName: "Jan",
       };
 
-      const { payload: result } = loadUserActionCreator(userData);
+      const { payload: result } = logInUserActionCreator(userData);
 
       const expected: UserState = {
         isLogged: true,
